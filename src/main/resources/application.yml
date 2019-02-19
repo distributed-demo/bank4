@@ -1,21 +1,21 @@
 server:
   port: 8022
-  datasource:
-    url: jdbc:mysql://116.62.62.26:3306/user?useAffectedRows=true
-    username: root
-    password: 14789632
-    driver-class-name: com.mysql.jdbc.Driver
+#  datasource:
+#    url: jdbc:mysql://116.62.62.26:3306/bank?useAffectedRows=true
+#    username: root
+#    password: 14789632
+#    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     service-url:
       default: http://127.0.0.1:8761/eureka
     healthcheck:
       enabled: true
-#mybatis:
-#  mapper-locations: classpath:mapper/*.xml
-#  type-aliases-package: com.java4all.entity
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.java4all.entity
 
 spring:
   application:
-    name: bank-server4
+    name: bank4
 

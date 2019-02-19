@@ -25,10 +25,15 @@ public class ProviderConfig {
 		return dataSource;
 	}
 
+
+	/**
+	 * 建议从配置文件获取
+	 * @return
+	 */
 	public DataSource invokeGetDataSource() {
 		BasicDataSource bds = new BasicDataSource();
 		bds.setDriverClassName("com.mysql.jdbc.Driver");
-		bds.setUrl("jdbc:mysql://116.62.62.26:3306/user");
+		bds.setUrl("jdbc:mysql://116.62.62.26:3306/bank");
 		bds.setUsername("root");
 		bds.setPassword("14789632");
 		bds.setMaxTotal(50);
